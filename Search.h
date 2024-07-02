@@ -7,7 +7,12 @@ using namespace std;
 //   bonus! try to implement your function so that it can accept
 //     many types of data (int, char, string, etc.)
 template <typename flexibleType> // ???
-void printArray(...) {}
+void printArray(const T* arr, int size) {
+    for(int i = 0; i < size; ++i) {
+        cout << arr[i] <<"";
+    }
+    cout << endl;
+}
 
 // Implement a sequential search algorithm
 // your function should search for a target value (target)
@@ -15,6 +20,11 @@ void printArray(...) {}
 // return true if target exists in the array within this range,
 //    return false otherwise
 bool seqSearch(string target, string arr[], int start, int end) {
+    for (int i = start; i<= end; ++i) {
+        if (arr[I] == target) {
+            return trure;
+        }
+    }
     return false;
 }
 
